@@ -6,7 +6,7 @@ body {
 }
 
 div {
-    padding: 1em;
+    /* padding: 1em; */
     /* border-bottom: 1px solid black; */
 }
 
@@ -211,8 +211,8 @@ button:hover {
    justify-content: space-around; 
     flex-wrap: wrap;
     align-items: center; 
- margin-left: 15%; 
-   margin-right: 15%; 
+ margin-left: 20%; 
+   margin-right: 20%; 
 }
  
 .localContainer > a  {
@@ -233,8 +233,17 @@ button:hover {
     background-color: #F0EAE0;
 }
 
+.local > p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 /* Visit */
 
 .visit {
     background-color: #E8D4D4;
+}
+
+.visit > a {
+    text-decoration: none;
 }
