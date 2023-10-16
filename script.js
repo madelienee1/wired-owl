@@ -5,7 +5,7 @@
     // Array of images to be displayed, each object in the array represents an image with its file name and alt text
     const imagesArray = [
         { file: 'doughnuts.png', alt: 'A hand opening a box filled with assorted doughnuts, featuring toppings like caramel drizzle, rose petals, and popped popcorn.' },
-        { file: 'rawtreat.png', alt: '' },
+        { file: 'wired-owl-bw.png', alt: 'Front of the Wired Owl in black and white' },
         { file: 'landing.jpg', alt: 'Two cups of coffee with intricate latte art designs on a sunlit wooden table.' },
         {file:'coffeepour.jpg', alt:"Close-up of a barista's hand pouring steamed milk into a black coffee cup, creating a swirl pattern of latte art."}
     ];

@@ -12,6 +12,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans:wght@300&family=Victor+Mono:wght@300&display=swap"
+        rel="stylesheet">
+
+
+
     <title>The Wired Owl Coffee Co.</title>
 </head>
 
@@ -22,78 +35,97 @@
             <ul>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="https://www.facebook.com/thewiredowlcoffeeco/"><img class="social"
+                <li><a href="https://www.facebook.com/thewiredowlcoffeeco/" aria-label="Facebook"><img class="social"
                             src="./images/fbcircle.svg" alt="Facebook Logo"></a></li>
-                <li"social"><a href="https://www.instagram.com/wired_owl_coffee/?hl=en"><img class="social"
-                            src="./images/instacolour.svg" alt="Instagram Logo"></a></li>
+                <li><a href="https://www.instagram.com/wired_owl_coffee/?hl=en" aria-label="Instagram"><img
+                            class="social" src="./images/instabw.svg" alt="Instagram Logo"></a></li>
+                <li><a href="https://bopple.app/the-wired-owl-coffee-co"><img class="linkBopple"
+                            src="./images/bopple-mobile.svg" alt="Bopple"></a></li>
             </ul>
         </nav>
     </header>
-    <div id="banner"><img class="landingImage" src="./images/landing.jpg" alt="coffee cups on timber table">
+
+    <div id="banner" role="img" aria-label="coffee cups on timber table">
+        <img class="landingImage" src="./images/landing.jpg" alt="coffee cups on timber table">
+        <!-- <div class="bannerButton">
+            <button class="boppleButton">ORDER ON BOPPLE</button>
+        </div> -->
     </div>
 
-
-    <div class="whoAreWe">
+    <section class="whoAreWe" itemscope itemtype="https://schema.org/AboutPage">
         <h2>WHO ARE WE?</h2>
-        <p>
+        <p itemprop="description">
             The Wired Owl Coffee Co. has been serving coffee to the Shorncliffe and surrounds community for over 6
-            years.
-            We proudly serve local roastery, Wolff Coffee Roasters, and offer a range of sweet and savoury treats from
-            local
-            suppliers.
-            We are a dog friendly cafe, your furry friends are more than welcome! The perfect spot for your morning
-            coffee,
-            a catch up with friends or perhaps some time to yourself. If you're short on time, order on Bopple or text
-            ahead
-            0413 849 814.
+            years. We proudly serve local roastery, Wolff Coffee Roasters, and offer a range of sweet and savoury treats
+            from
+            local suppliers. We are a dog friendly cafe, your furry friends are more than welcome! Our sunny little
+            corner in Shorncliffe
+            is the perfect spot for your morning coffee, a catch up with friends or perhaps some time to yourself.
+            If you're short on time, order on Bopple or text ahead to 0413 849 814.
         </p>
         <button onclick="document.location='about.html'">LEARN MORE</button>
-    </div>
+    </section>
 
-    <div class="supportingLocal">
+    <section class="supportingLocal" itemscope itemtype="https://schema.org/LocalBusiness">
         <h2>SUPPORTING LOCAL</h2>
-        <p>All of our products are sourced from local family owned businesses. We pride ourselves on community and
-            supporting other small local businesses.</p>
+        <p itemprop="description">All of our products are sourced from other local businesses from Brisbane to the
+            Sunshine Coast.
+            We pride ourselves on our tightknit community and supporting other small businesses. Take a peek at some of
+            our products below.</p>
         <div class="localContainer">
-            <a href="https://www.instagram.com/milkmen.supply/?hl=en"><img class="localImg"
-                    src="./images/pinnaclebrews.png" alt="Pinnacle Brews Iced Tear"></a>
-            <a href="https://www.instagram.com/wolffcoffeeroasters/"><img class="localImg" src="./images/coffeepour.jpg"
-                    alt="Two Hoots coffee by Wolff"></a>
-            <a href="https://www.instagram.com/p/CxXIvxeJpnX/?hl=en"><img class="localImg" src="./images/furcoffee.png"
-                    alt="Fur and Coffee Dog Biscuits"></a>
-            <a href="https://www.instagram.com/brkfst_/?hl=en"><img class="localImg" src="./images/brkfst.jpg"
-                    alt="BRKFST Pot"></a>
-            <a href="https://www.instagram.com/homemade.bliss/?hl=en"><img class="localImg"
-                    src="./images/homemadebliss.jpg" alt="Homemade Bliss tarts"></a>
-            <a href="https://www.instagram.com/doughluxe_doughnut/"><img class="localImg" src="./images/doughnuts.png"
-                    alt="Doughnuts"></a>
+            <a href="https://www.instagram.com/milkmen.supply/?hl=en" aria-label="Milkmen Supply Instagram"><img
+                    class="localImg" src="./images/pinnaclebrews.png" alt="Pinnacle Brews Iced Tear" itemprop="image">
+                <p>Milkmen Supply</p>
+            </a>
+            <a href="https://www.instagram.com/wolffcoffeeroasters/" aria-label="Wolff Coffee Roasters Instagram"><img
+                    class="localImg" src="./images/coffeepour.jpg" alt="Two Hoots coffee by Wolff" itemprop="image">
+                <p>Wolff Coffee Roasters</p>
+            </a>
+            <a href="https://www.instagram.com/p/CxXIvxeJpnX/?hl=en"
+                aria-label="Fur and Coffee Dog Biscuits Instagram"><img class="localImg" src="./images/furcoffee.png"
+                    alt="Fur and Coffee Dog Biscuits" itemprop="image">
+                <p>Fur and Coffee</p>
+            </a>
+            <a href="https://www.instagram.com/brkfst_/?hl=en" aria-label="BRKFST Instagram"><img class="localImg"
+                    src="./images/brkfst.jpg" alt="BRKFST Pot" itemprop="image">
+                <p>BRKFST</p>
+            </a>
+            <a href="https://www.instagram.com/homemade.bliss/?hl=en" aria-label="Homemade Bliss Instagram"><img
+                    class="localImg" src="./images/homemadebliss.jpg" alt="Homemade Bliss tarts" itemprop="image">
+                <p>Homemade Bliss</p>
+            </a>
+            <a href="https://www.instagram.com/doughluxe_doughnut/" aria-label="Doughluxe Doughnut Instagram"><img
+                    class="localImg" src="./images/doughnuts.png" alt="Doughnuts" itemprop="image">
+                <p>Doughluxe</p>
+            </a>
         </div>
-    </div>
+    </section>
 
+    <section>
+        <h3>@wired_owl_coffee</h2>
+            <p>Follow our journey on Instagram</p>
+            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+            <div class="elfsight-app-a05a5ed4-4bc8-44f5-b2d0-2b678209c3d1"></div>
+    </section>
 
-    <div>
-        <h2>FOLLOW OUR JOURNEY ON INSTAGRAM</h2>
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-a05a5ed4-4bc8-44f5-b2d0-2b678209c3d1"></div>
-    </div>
-
-    <div class="visit">
+    <section class="visit" itemscope itemtype="https://schema.org/ContactPage">
         <h2>VISIT</h2>
-        <p>227 Rainbow St, Sandgate QLD 4017<br>MON - SUN | 6am - 2pm<br>0413 849 814</p>
+        <address itemprop="address">
+            227 Rainbow St, Sandgate QLD 4017<br>MON - SUN | 6am - 2pm<br><abbr title="Phone">P:</abbr> 0413 849 814
+        </address>
         <a href="https://maps.app.goo.gl/JAonUUntTbGyqU4k8">
             <button>FIND US</button>
         </a>
+    </section>
+
+    <div>
+        <img class="footerImage" src="./images/wired-owl-bw.png" alt="Wired Owl shopfront in black and white">
     </div>
 
     <footer>
-        <p>&copy Madeliene Stiller 2023</p>
+        <p>&copy; Madeliene Stiller 2023</p>
     </footer>
-    <script src="./script.js" defer> </script>
+    <script src="./script.js" defer></script>
 </body>
-
-
-</html>
-</body>
-
 
 </html>
