@@ -1,13 +1,11 @@
 
     // Define the interval for image change in seconds
-    const INTERVAL_IN_SECONDS = 10;
+    const INTERVAL_IN_SECONDS = 5;
 
     // Array of images to be displayed, each object in the array represents an image with its file name and alt text
     const imagesArray = [
-        { file: 'doughnuts.png', alt: 'A hand opening a box filled with assorted doughnuts, featuring toppings like caramel drizzle, rose petals, and popped popcorn.' },
         { file: 'wired-owl-bw.png', alt: 'Front of the Wired Owl in black and white' },
         { file: 'landing.jpg', alt: 'Two cups of coffee with intricate latte art designs on a sunlit wooden table.' },
-        {file:'coffeepour.jpg', alt:"Close-up of a barista's hand pouring steamed milk into a black coffee cup, creating a swirl pattern of latte art."}
     ];
 
     // Function to add a new image to the banner and animate the transition
@@ -23,9 +21,9 @@
 
         // If both old and next images exist, animate the transition
         if (oldImage && nextImage) {
-            oldImage.className = 'slide-out';
-            nextImage.className = 'slide-in';
-            nextImage.style.left = '0';
+            oldImage.className = 'fade-out';
+            nextImage.className = 'fade-in';
+            // nextImage.style.left = '0';
         }
 
         // Create a new image element
@@ -33,20 +31,19 @@
         // Set the source and alt text of the new image
         newImage.src = `./images/${file}`;
         newImage.alt = alt;
-        // Position the new image to the left of the banner
-        newImage.style.left = "-100%";
+        newImage.className = 'new-image';
         // Add the new image to the banner
         banner.appendChild(newImage);
         // Remove the old image after the transition is complete
-        setTimeout(() => oldImage && nextImage && oldImage.remove(), 4000);
+        setTimeout(() => oldImage && nextImage && oldImage.remove(), 6000);
     };
 
     // For each image in the array, set a timeout to add the image to the banner and set an interval to repeat the process
     imagesArray.forEach((image, index) => {
         setTimeout(() => {
             addScrollImage(image);
-            setInterval(() => addScrollImage(image), INTERVAL_IN_SECONDS * 1000 * imagesArray.length);
-        }, INTERVAL_IN_SECONDS * 1000 * index);
+            setInterval(() => addScrollImage(image), INTERVAL_IN_SECONDS * 3000 * imagesArray.length);
+        }, INTERVAL_IN_SECONDS * 3000 * index);
     });
 
     // // Function to open the text message app on the user's phone when a button is pressed
