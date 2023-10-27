@@ -103,3 +103,12 @@ const deleteInstagramWidget = () => {
     
     observer.observe(document.body, { childList: true, subtree: true });
     
+
+
+    // Mobile
+    const mobileMenuButton = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenuButton.classList.toggle('active');
+});

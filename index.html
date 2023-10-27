@@ -31,8 +31,15 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="./images/simplelogo.jpg" alt="Wired Owl Logo">
-            <ul>
+            <a href="index.html"><img class="logo" src="./images/simplelogo.jpg" alt="Wired Owl Coffee Co. Logo"
+                    itemprop="image">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="https://www.facebook.com/thewiredowlcoffeeco/" aria-label="Facebook"><img class="social"
@@ -45,11 +52,9 @@
         </nav>
     </header>
 
+
     <div id="banner" role="img" aria-label="coffee cups on timber table">
         <img class="landingImage" src="./images/landing.jpg" alt="coffee cups on timber table">
-        <!-- <div class="bannerButton">
-            <button class="boppleButton">ORDER ON BOPPLE</button>
-        </div> -->
     </div>
 
     <section class="whoAreWe" itemscope itemtype="https://schema.org/AboutPage">
@@ -100,7 +105,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="insta-feed">
         <h3>@wired_owl_coffee</h2>
             <p>Follow our journey on Instagram</p>
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
@@ -122,9 +127,16 @@
     </div>
 
     <footer>
-        <p>&copy; Madeliene Stiller 2023</p>
+        <ul class="social-footer">
+            <li><a href="https://www.facebook.com/thewiredowlcoffeeco/" aria-label="Facebook"><img class="social"
+                        src="./images/fbcircle.svg" alt="Facebook Logo"></a></li>
+            <li><a href="https://www.instagram.com/wired_owl_coffee/?hl=en" aria-label="Instagram"><img class="social"
+                        src="./images/instabw.svg" alt="Instagram Logo"></a></li>
+        </ul>
+        <p class="copyright">&copy; Madeliene Stiller 2023</p>
     </footer>
     <script src="./script.js" defer></script>
+
 </body>
 
 </html>
