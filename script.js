@@ -112,3 +112,16 @@ const navList = document.querySelector('.nav-list');
 mobileMenuButton.addEventListener('click', () => {
     mobileMenuButton.classList.toggle('active');
 });
+
+    const toggleMenuButton = document.querySelector('.hamburger-menu');
+    const closeMenuButton = document.querySelector('.closebtn');
+
+    toggleMenuButton.addEventListener('click', () => {
+        document.getElementById("nav-list").style.display = "flex";
+    });
+
+    closeMenuButton.addEventListener('click', () => {
+        document.getElementById("nav-list").style.display = "none";
+    });
+
+    

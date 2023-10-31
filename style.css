@@ -1,13 +1,54 @@
+/* Element Tag Styles */
 
 body { 
     min-height: 100vh; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #E8D4D4;
 }
 
- 
+h2 {
+    font-family: 'Victor Mono', monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p, address {
+    font-family: 'Cutive Mono', monospace;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    font-style: normal;
+}
+
+ul {
+list-style-type: none;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin: 0;
+padding: 0;
+margin-right: 5rem;
+font-family: 'Open Sans', sans-serif;
+font-size: 1rem;
+font-weight: bold;
+}
+
+li {
+    padding: 1rem;
+}
+
+/* Navigation Styles */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -49,33 +90,9 @@ nav ul li:hover {
     background-color: #eedfd8;
 }
 
-ul {
-list-style-type: none;
-display: flex;
-justify-content: space-around;
-align-items: center;
-margin: 0;
-padding: 0;
-margin-right: 5rem;
-font-family: 'Open Sans', sans-serif;
-font-size: 1rem;
-font-weight: bold;
-}
-
 .linkBopple{
     width: 1.2rem;
     height: 1.2rem;
-    }
-
-    
-li {
-    padding: 1rem;
-}
-
-/* Responsive Menu - Mobile */
-
-.menu-toggle {
-    display: none;
 }
 
 /* Landing and Footer Images */
@@ -85,13 +102,12 @@ li {
     height: auto;
 }
 
-.footerImage {
+.footer-image {
     width: 100%;
     height: 30rem;
 }
 
-
-/* Who Are We? */
+/* Who Are We? Section */
 
 .whoAreWe, .visit {
 display: flex;
@@ -105,39 +121,11 @@ justify-content: center;
     background-color: white;
 }
 
-
-/* Typography */
-
-h2 {
-    font-family: 'Victor Mono', monospace;
-    font-weight: bold;
-    font-size: 2rem;
-    text-align: center;
-}
-
-h3 {
-    font-family: 'Cutive Mono', monospace;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-p, address {
-    font-family: 'Cutive Mono', monospace;
-    text-align: center;
-    font-size: 1.25rem;
-    line-height: 2.5rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    font-style: normal;
-}
-
-
 /* Transition Effect */
 
 .landingImage {
     animation: transitionIn 5s;
 }
-
 
 @keyframes transitionIn {
     0% {
@@ -156,7 +144,6 @@ p, address {
     
 }
 
-
 /* Banner Image */
 
 #banner{
@@ -172,7 +159,6 @@ p, address {
     height: auto;
     width: 100%;
 }
-
 
 .next-image {
     left:100%;
@@ -214,7 +200,6 @@ p, address {
     
 }
 
-
 /* Buttons */
 
 button {
@@ -235,7 +220,7 @@ button:hover {
     background-color: black;
     color: white;
     cursor: pointer;
-    transform: scale(1.05); /* Slight enlargement effect */
+    transform: scale(1.05);
 
 }
 
@@ -293,7 +278,6 @@ form > button {
     transition: opacity 0.3s ease; /* Smooth transition */
 }
 
-
 .localContainer > a:hover > p {
     opacity: 1;
 }
@@ -323,12 +307,10 @@ form > button {
     text-decoration: none;
 }
 
-
 /* Enhanced spacing and padding */
 section {
     padding: 50px 0; /* Adjust as necessary */
 }
-
 
 /* Consider adding a container within sections to control content width */
 .container {
@@ -337,12 +319,9 @@ section {
     padding: 0 15px;
 }
 
-
 .elfsight-app-a05a5ed4-4bc8-44f5-b2d0-2b678209c3d1 {
     padding-top: 0px 10px;
 }
-
-
 
 /* Contact Page */
 .contact-container {
@@ -393,7 +372,6 @@ form {
 
 
   footer {
-    background-color: #E8D4D4; 
     color: #333;
     text-align: center;
     position: relative;
@@ -419,9 +397,8 @@ font-family: 'Cutive Mono', monospace;
     margin-top: 2rem;
 }
 
+/* Media Query Styles */
 
-
-/* Responsive design for different screen sizes */
 @media screen and (max-width: 1920px) {
 
     /* Styles for 1920x1080 screens */
@@ -435,6 +412,7 @@ font-family: 'Cutive Mono', monospace;
     /* Styles for 1366x768 screens */
 }
 
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -443,7 +421,6 @@ font-family: 'Cutive Mono', monospace;
     .container {
         width: 95%;
     }
-
 
 .localContainer {
     display: none;
@@ -480,43 +457,16 @@ transform: scale(1.05);
 
 }
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    width: 30px;
-    cursor: pointer;
-    margin-right: 2rem;
+ul {
+display: none;
 }
 
-.bar {
-    background-color: #333;
-    height: 3px;
-    width: 100%;
-    margin-bottom: 5px;
+.footer-image {
+    height: auto;
 }
 
-.nav-list {
-    position: absolute;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-    display: none; /* By default menu will be hidden */
-}
-
-.nav-list.active {
-    display: block; /* Menu will display when active class is added */
-}
-
-.nav-list li {
-    width: 100%;
-    text-align: center;
-}
-
-.nav-list li a {
-    display: block;
-    width: 100%;
-    padding: 10px;
+.visit {
+    height: 12rem;
+    padding: 30px 0;
 }
 }
-
-    
