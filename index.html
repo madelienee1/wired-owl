@@ -35,8 +35,7 @@
                     itemprop="image">
             </a>
             <ul>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li class="nav-contact"><a href="contact.html">CONTACT</a></li>
                 <li><a href="https://www.facebook.com/thewiredowlcoffeeco/" aria-label="Facebook"><img class="social"
                             src="./images/fbcircle.svg" alt="Facebook Logo"></a></li>
                 <li><a href="https://www.instagram.com/wired_owl_coffee/?hl=en" aria-label="Instagram"><img
@@ -52,19 +51,18 @@
         <img class="landingImage" src="./images/landing.jpg" alt="coffee cups on timber table">
     </div>
 
-    <section class="whoAreWe" itemscope itemtype="https://schema.org/AboutPage">
-        <h2>WHO ARE WE?</h2>
-        <p itemprop="description">
-            The Wired Owl Coffee Co. has been serving coffee to the Shorncliffe and surrounds community for over 6
-            years. We proudly serve local roastery, Wolff Coffee Roasters, and offer a range of sweet and savoury treats
-            from
-            local suppliers. We are a dog friendly cafe, your furry friends are more than welcome! Our sunny little
-            corner in Shorncliffe
-            is the perfect spot for your morning coffee, a catch up with friends or perhaps some time to yourself.
-            If you're short on time, order on Bopple or text ahead to 0413 849 814.
-        </p>
-        <button onclick="document.location='about.html'">LEARN MORE</button>
+    <section class="visit" itemscope itemtype="https://schema.org/ContactPage">
+        <h2>VISIT</h2>
+        <address itemprop="address"> MON - SUN | 6am - 2pm<br>
+            227 Rainbow St, Sandgate QLD 4017<br>E: danni@wiredowlcoffee.com.au<br><abbr title="Phone">P:</abbr> 0413
+            849
+            814
+        </address>
+        <a href="https://maps.app.goo.gl/JAonUUntTbGyqU4k8">
+            <button>FIND US</button>
+        </a>
     </section>
+
 
     <section class="supportingLocal" itemscope itemtype="https://schema.org/LocalBusiness">
         <h2>SUPPORTING LOCAL</h2>
@@ -97,6 +95,42 @@
                     class="localImg" class="mobileImg" src="./images/doughnuts.png" alt="Doughnuts" itemprop="image">
                 <p>Doughluxe</p>
             </a>
+            </a>
+        </div>
+    </section>
+
+    <section class="supporting-local-mobile" itemscope itemtype="https://schema.org/LocalBusiness">
+        <h2>SUPPORTING LOCAL</h2>
+        <p itemprop="description">All of our products are sourced from other local businesses from Brisbane to the
+            Sunshine Coast.
+            We pride ourselves on our tightknit community and supporting other small businesses.</p>
+        <div class="localContainer">
+            <a href="https://www.instagram.com/milkmen.supply/?hl=en" aria-label="Milkmen Supply Instagram"><img
+                    class="localImg" src="./images/pinnaclebrews.png" alt="Pinnacle Brews Iced Tear" itemprop="image">
+                <p>Milkmen Supply</p>
+            </a>
+            <a href="https://www.instagram.com/wolffcoffeeroasters/" aria-label="Wolff Coffee Roasters Instagram"><img
+                    class="localImg" src="./images/coffeepour.jpg" alt="Two Hoots coffee by Wolff" itemprop="image">
+                <p>Wolff Coffee Roasters</p>
+            </a>
+            <a href="https://www.instagram.com/p/CxXIvxeJpnX/?hl=en"
+                aria-label="Fur and Coffee Dog Biscuits Instagram"><img class="localImg" src="./images/furcoffee.png"
+                    alt="Fur and Coffee Dog Biscuits" itemprop="image">
+                <p>Fur and Coffee</p>
+            </a>
+            <a href="https://www.instagram.com/brkfst_/?hl=en" aria-label="BRKFST Instagram"><img class="localImg"
+                    src="./images/brkfst.jpg" alt="BRKFST Pot" itemprop="image">
+                <p>BRKFST</p>
+            </a>
+            <a href="https://www.instagram.com/homemade.bliss/?hl=en" aria-label="Homemade Bliss Instagram"><img
+                    class="localImg" src="./images/homemadebliss.jpg" alt="Homemade Bliss tarts" itemprop="image">
+                <p>Homemade Bliss</p>
+            </a>
+            <a href="https://www.instagram.com/doughluxe_doughnut/" aria-label="Doughluxe Doughnut Instagram"><img
+                    class="localImg" class="mobileImg" src="./images/doughnuts.png" alt="Doughnuts" itemprop="image">
+                <p>Doughluxe</p>
+            </a>
+            </a>
         </div>
     </section>
 
@@ -107,14 +141,18 @@
             <div class="elfsight-app-a05a5ed4-4bc8-44f5-b2d0-2b678209c3d1"></div>
     </section>
 
-    <section class="visit" itemscope itemtype="https://schema.org/ContactPage">
-        <h2>VISIT</h2>
-        <address itemprop="address">
-            227 Rainbow St, Sandgate QLD 4017<br>MON - SUN | 6am - 2pm<br><abbr title="Phone">P:</abbr> 0413 849 814
-        </address>
-        <a href="https://maps.app.goo.gl/JAonUUntTbGyqU4k8">
-            <button>FIND US</button>
-        </a>
+    <section class="whoAreWe" itemscope itemtype="https://schema.org/AboutPage">
+        <h2>WHO ARE WE?</h2>
+        <p itemprop="description">
+            The Wired Owl Coffee Co. has been serving coffee to the Shorncliffe and surrounds community for over 6
+            years. We serve a custom blend called 'Two Hoots' from local roastery, Wolff Coffee Roasters, and offer a
+            range of products
+            from local suppliers. We are a dog friendly cafe, your furry friends are more than welcome!
+            If you're short on time, order on
+            <a href="https://bopple.app/the-wired-owl-coffee-co" class="bopple-inline">Bopple</a>
+            or text ahead to 0413 849 814.
+        </p>
+        <!-- <button onclick="document.location='about.html'">LEARN MORE</button> -->
     </section>
 
     <div>

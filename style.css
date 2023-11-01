@@ -24,7 +24,7 @@ p, address {
     font-family: 'Cutive Mono', monospace;
     text-align: center;
     font-size: 1.25rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     margin-left: 15rem;
     margin-right: 15rem;
     font-style: normal;
@@ -66,7 +66,7 @@ nav {
 .logo {
     height: 3rem;
     margin-top: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .social {
@@ -95,6 +95,12 @@ nav ul li:hover {
     height: 1.2rem;
 }
 
+.bopple-inline {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 /* Landing and Footer Images */
 
 .landingImage {
@@ -118,7 +124,7 @@ justify-content: center;
 }
 
 .whoAreWe {
-    background-color: white;
+    background-color: #E8D7D3;
 }
 
 /* Transition Effect */
@@ -283,7 +289,7 @@ form > button {
 }
 
 .supportingLocal {
-    background-color: #e6cabe;
+    background-color: #E8D4D4;
     padding: 0 auto;
 }
 
@@ -296,10 +302,13 @@ form > button {
     background-color: white;
 }
 
+.supporting-local-mobile {
+    display: none;
+}
+
 /* Visit */
 
 .visit {
-    background-color: #E8D4D4;
     height: 20rem;
 }
 
@@ -422,9 +431,7 @@ font-family: 'Cutive Mono', monospace;
         width: 95%;
     }
 
-.localContainer {
-    display: none;
-}
+
 
 h2 {
     font-size: 20px;
@@ -457,9 +464,31 @@ transform: scale(1.05);
 
 }
 
-ul {
+.nav-contact {
 display: none;
 }
+
+ul {
+    margin-right: 0rem;
+}
+
+.social {
+    height: 1rem;
+}
+
+.linkBopple {
+    height: 1rem;
+    width: 1rem;
+}
+
+nav ul li {
+    padding: 1rem;
+}
+
+.logo {
+    margin-left: 1rem;
+}
+
 
 .footer-image {
     height: auto;
@@ -469,4 +498,9 @@ display: none;
     height: 12rem;
     padding: 30px 0;
 }
+
+.social-footer {
+    margin-top: 0;
 }
+}
+
