@@ -119,7 +119,7 @@ nav ul li:hover {
 }
 
 
-/* Landing and Footer Images */
+/* Landing */
 
 .landing-image {
     width: 100%;
@@ -396,14 +396,15 @@ form {
   /* Footer */
   .footer-images {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    overflow-x: hidden;
     margin-top: 5rem;
     margin-bottom: 2rem;
     max-width: 100%;
   }
 
   .footer-images > img {
-    width: 45%;
+    width: 35%;
   }
 
   footer {
@@ -440,7 +441,7 @@ font-family: 'Cutive Mono', monospace;
     body {
         overflow-x: hidden;
     }
-    
+
     .container {
         width: 95%;
     }
@@ -549,12 +550,12 @@ form input, form textarea {
     width: 5rem;
   }
 
-.footer-images {
+/* .footer-images {
     display: flex;
     margin-top: 2rem;
     max-width: 100%;
-
-}
+    overflow-x: hidden;
+} */
 
 .visit {
     height: 12rem;
