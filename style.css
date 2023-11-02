@@ -316,9 +316,12 @@ form > button {
     margin-right: 20%;
 }
 
-.local-mobile, .local-img {
-    display: none;
-}
+
+@media screen and (min-width:769px) {
+    .local-mobile, .local-img {
+    display:none;
+    }
+    }
 
 
 /* Instagram Feed */
