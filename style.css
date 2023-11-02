@@ -506,8 +506,6 @@ ul {
     width: 1rem;
 }
 
-
-
 .supporting-local {
     display: none;
 }
@@ -549,6 +547,8 @@ form input, form textarea {
 .footer-images {
     display: flex;
     margin-top: 2rem;
+    max-width: 100%;
+
 }
 
 .visit {
@@ -559,5 +559,9 @@ form input, form textarea {
 .social-footer {
     margin-top: 0;
 }
+
+body {
+    overflow-x: hidden;
+ }
 }
 
