@@ -126,9 +126,6 @@ nav ul li:hover {
     height: auto;
 }
 
-.footer-image {
-    width: 100%;
-}
 
 /* Who Are We? Section */
 
@@ -402,6 +399,7 @@ form {
     justify-content: space-evenly;
     margin-top: 5rem;
     margin-bottom: 2rem;
+    max-width: 100%;
   }
 
   .footer-images > img {
