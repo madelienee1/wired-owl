@@ -342,7 +342,7 @@ form > button {
 }
 
 section {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .container {
@@ -442,6 +442,10 @@ font-family: 'Cutive Mono', monospace;
         overflow-x: hidden;
     }
 
+    section {
+        padding: 80px 0;
+    }
+
     .container {
         width: 95%;
     }
@@ -450,12 +454,16 @@ font-family: 'Cutive Mono', monospace;
         display: none;
     }
 
+    #banner {
+        height: 70vw;
+    }
+    
 h2 {
-    font-size: 20px;
+    font-size: 2rem;
 
 }
 p, address {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 1.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -463,14 +471,14 @@ p, address {
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 button, .find-us {
-width: 4rem;
-height: 2rem;
+width: 6rem;
+height: 3rem;
 border-radius: 0.5rem;
-font-size: 10px;
+font-size: 1rem;
 }
 
 button:hover, .find-us:hover {
@@ -559,7 +567,7 @@ form input, form textarea {
 
 .visit {
     height: 12rem;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .social-footer {
