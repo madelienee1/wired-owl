@@ -454,29 +454,25 @@ font-family: 'Cutive Mono', monospace;
         display: none;
     }
 
-    #banner {
-        height: 70vw;
-    }
-    
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 p, address {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
     margin-left: 2rem;
     margin-right: 2rem;
     font-style: normal;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 button, .find-us {
 width: 6rem;
-height: 3rem;
+height: 2rem;
 border-radius: 0.5rem;
 font-size: 1rem;
 }
@@ -558,6 +554,11 @@ form input, form textarea {
     width: 5rem;
   }
 
+  .find-us {
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
 /* .footer-images {
     display: flex;
     margin-top: 2rem;
@@ -567,7 +568,7 @@ form input, form textarea {
 
 .visit {
     height: 12rem;
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 .social-footer {
